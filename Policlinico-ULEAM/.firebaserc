@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "policlinico-uleam",
+    "Policlinico": "policlinico-uleam"
+  },
+  "targets": {},
+  "etags": {}
+}

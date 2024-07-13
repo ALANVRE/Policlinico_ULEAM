@@ -1,0 +1,40 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<div>
+  
+  <h1>Buscar Paciente</h1>
+  <form (ngSubmit)="buscar()">
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" [(ngModel)]="email" name="email" required><br><br>
+
+    <button type="submit">Buscar</button>
+
+
+  <div class="table-container" *ngIf="pacienteEncontrado">
+    <h2>Paciente Encontrado:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Cédula</th>
+          <th>Tipo de Sangre</th>
+          <th>Alergias</th>
+          <th>Enfermedades</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ pacienteEncontrado.nombre }}</td>
+          <td>{{ pacienteEncontrado.apellido }}</td>
+          <td>{{ pacienteEncontrado.cedula }}</td>
+          <td>{{ pacienteEncontrado.tiposangre }}</td>
+          <td>{{ pacienteEncontrado.alergias }}</td>
+          <td>{{ pacienteEncontrado.enfermedades }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> 
+ </form>
+</div>

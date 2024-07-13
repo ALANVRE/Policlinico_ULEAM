@@ -1,0 +1,35 @@
+header {
+  font-family: 'PT Serif';
+  background-color: rgb(100, 121, 240);
+  padding: 25px;
+  border-radius: 5%;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.menu {
+  flex-grow: 1;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-list__item {
+  margin-left: 25px;
+}
+
+.menu-list__item a {
+  text-decoration: none;
+  color: #0a0a0a;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menu-list__item a:hover {
+  background-color: #4c517a;
+  color: #333;}
